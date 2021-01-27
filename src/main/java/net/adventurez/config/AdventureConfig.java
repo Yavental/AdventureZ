@@ -7,7 +7,7 @@ import me.sargunvohra.mcmods.autoconfig1u.annotation.Config;
 
 @Config(name = "adventurez")
 @Config.Gui.Background("minecraft:textures/block/stone.png")
-public class AdventureConfig implements ConfigData {
+public class AdventureConfig implements ConfigData {en_us.json} {
   @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
   public int necromancer_spawn_weight = 1;
   @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
@@ -27,5 +27,26 @@ public class AdventureConfig implements ConfigData {
   public int blaze_guardian_spawn_weight = 1;
   @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
   public int fungus_spawn_weight = 10;
-
+  
+public class AdventureConfig implements ConfigData {ru_ru.json} {
+  @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+  public int necromancer_spawn_weight = 1;
+  @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+  public int nightmare_spawn_weight = 2;
+  @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+  @Comment("Шанс появления, когда добываешь золотую руду в аду; 1/Value")
+  public int piglin_beast_ore_spawn_chance = 100;
+  @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+  @Comment("Шанс появления, когда убиваешь множество пиглинов; 1/Value")
+  public int piglin_beast_attack_piglin_spawn_chance = 2;
+  @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+  public int small_stone_golem_spawn_weight = 5;
+  @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+  @Comment("Шанс появления, когда ударяет молния; 1/Value")
+  public int summoner_thunder_spawn_chance = 4;
+  @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+  public int blaze_guardian_spawn_weight = 1;
+  @ConfigEntry.BoundedDiscrete(min = 0, max = 100)
+  public int fungus_spawn_weight = 10;
+  
 }
